@@ -8,7 +8,7 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-app.get('/ranking', (req, res) => { return res.status(200).json([{ name: 'Vinicius Monteiro Orlandi', pontuation: 23 }]) })
+app.get('/ranking', (req, res) => { return res.status(200).json({ "1": "vinicius", "2": "vinicius", "3": "vinicius", "4": "vinicius", "5": "vinicius" }) })
 
 
 app.get('/', (req, res) => res.json({ msg: "Ola Mundo" }))
